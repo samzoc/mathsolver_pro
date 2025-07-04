@@ -13,9 +13,19 @@ MathSolver Pro is a modular, advanced mathematics library for Python, designed f
 - Jupyter notebooks and benchmarks included
 
 ## Installation
+
+### Install all requirements (recommended for full reproducibility)
+To ensure your environment matches the tested setup, install all pinned dependencies:
 ```bash
-pip install mathsolver-pro
+pip install -r requirements.txt
 ```
+
+### For development and testing
+If you are developing or running tests/notebooks, also install:
+```bash
+pip install -r requirements-dev.txt
+```
+This includes tools like `pytest`, `jupyter`, and notebook dependencies.
 
 ## Quick Example
 ```python
