@@ -60,6 +60,9 @@ def var_historical(returns, alpha=0.95):
 def expected_shortfall(returns, alpha=0.95):
     returns = np.sort(returns)
     idx = int((1-alpha)*len(returns))
+    if idx == 0:
+        # If the slice is empty, return the worst loss (minimum return)
+        return float(np.min(returns))
     return float(returns[:idx].mean())
 
 def portfolio_mean_variance(mu, cov):
