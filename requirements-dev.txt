@@ -1,0 +1,5 @@
+pytest
+jupyter
+nbconvert
+nbclient
+six 
