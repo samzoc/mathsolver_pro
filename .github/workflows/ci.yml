@@ -26,3 +26,5 @@ jobs:
           pip install .
       - name: Run tests
         run: pytest mathsolver_pro/tests
+
+#
